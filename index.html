@@ -45,6 +45,22 @@ a.row:hover .go{color:var(--blue)}
 .btn.o{color:#fff;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.03)}
 .btn.o:hover{border-color:#fff}
 .btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media (min-width:800px){
+.wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);column-gap:clamp(48px,8vw,112px);row-gap:0;align-content:center;max-width:1160px;min-height:calc(100dvh - 52px);padding:0 48px 56px}
+.top{grid-column:1/-1;margin:0;padding:22px 0}
+.eyebrow{grid-column:1;grid-row:2;margin:clamp(44px,6vw,76px) 0 20px}
+h1{grid-column:1;grid-row:3;font-size:clamp(48px,5.2vw,68px);margin:0 0 16px}
+.sub{grid-column:1;grid-row:4;max-width:40ch;margin:0 0 26px;font-size:17px}
+.cta{grid-column:1;grid-row:5;flex-direction:row;margin:0 0 28px}
+.btn{flex:1;min-height:56px;padding:14px 16px}
+.h2{grid-column:2;grid-row:2;margin:clamp(44px,6vw,76px) 0 12px}
+.panel{grid-column:2;grid-row:3/span 4;align-self:center;padding:8px 20px}
+.foot{grid-column:1;grid-row:6;margin:0}
+}
+@media (min-width:800px) and (max-height:700px){
+.wrap{align-content:start;min-height:0}
+.eyebrow,.h2{margin-top:42px}
+}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="igg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/><stop offset=".6" stop-color="#d62976"/><stop offset=".85" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><symbol id="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol></svg>
 <p class="risk">Trading FX and CFDs is leveraged and carries a high level of risk to your capital. You can lose all of the capital you invest. It is not suitable for everyone. Please read our <u>Risk Disclosure</u> and ensure you fully understand the risks before trading.</p>
